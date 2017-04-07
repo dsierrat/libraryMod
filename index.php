@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Library MOD</title>
-  </head>
-  <body>
-    
-  </body>
-</html>
+<?php
+
+require_once'./view/header.html';
+require_once './view/mainPage.php';
+require_once './view/footer.html';
+
+
+class ClassName{
+
+  function __construct()
+  {
+    # code...
+  }
+
+  public function inicio(){
+
+
+
+
+  }
+}
+
+
+
+ ?>
