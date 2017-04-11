@@ -1,25 +1,25 @@
-<?php
 
-require_once'./view/header.html';
-require_once './view/mainPage.php';
-require_once './view/footer.html';
+ <?php
 
+ $controller = "login";
 
-class ClassName{
+ // Todo esta lógica hara el papel de un FrontController
+ if(!isset($_REQUEST['c'])){
 
-  function __construct()
-  {
-    # code...
-  }
+     require_once "controller/$controller"."_controller.php";
+     $controller = new $controller;
+     $controller->index();
+ }else{
 
-  public function inicio(){
+     // Obtenemos el controlador que queremos cargar
+     $controller = strtolower($_REQUEST['c']);
+     $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
+     // Instanciamos el controlador
+     require_once "controller/$controller"."_controller.php";
+     //$controller = ucwords($controller) . 'Controller';
+     $controller = new $controller;
 
-
-
-
-  }
-}
-
-
-
+     // Llama la accion
+     call_user_func( array( $controller, $accion ) );
+ }
  ?>
