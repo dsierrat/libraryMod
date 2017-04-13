@@ -113,6 +113,8 @@
         <div class="col-md-5">
           <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
+
+        <div><h3>Poco a poco voy entendiendo :/ </h3></div>
       </div>
 
       <hr class="featurette-divider">
