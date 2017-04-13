@@ -22,6 +22,15 @@ class login{
     require_once 'view/footer.html';
 
   }
+
+  public function verificar()
+  {
+    // if(admin){
+    require_once 'view/header.html';
+    require_once 'view/admin/admin.php';
+    require_once 'view/footer.html';
+
+  }
 }
 
 
