@@ -10,9 +10,9 @@
           <img class="first-slide" src="assets/images/biblioteca.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption d-none d-md-block text-left">
-              <h1>Example headline.</h1>
-              <p>OK.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h1>Quieres comprar</h1>
+              <p>Ingresa ahora</p>
+              <p><a class="btn btn-lg btn-primary" href="?c=login&a=home" role="button">Iniciar sesion</a></p>
             </div>
           </div>
         </div>
@@ -20,9 +20,9 @@
           <img class="second-slide" src="assets/images/libro.jpg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption d-none d-md-block">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <h1>Acerca de nosotros</h1>
+              <p>Library Mod es un sitio donde puedes obtener los mejores libros a los mejores precios</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer más</a></p>
             </div>
           </div>
         </div>
@@ -30,9 +30,9 @@
           <img class="third-slide" src="assets/images/libros-viejos.jpg" alt="Third slide">
           <div class="container ">
             <div class="carousel-caption d-none d-md-block text-right">
-              <h1 >One more for good measure.</h1>
-              <p  >Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <h1>Te gustaria ser parte de nosotros</h1>
+              <p >Registrate y podrás comprar todos lo libros que quieras </p>
+              <p><a class="btn btn-lg btn-primary" href="?c=login&a=registrar" role="button">Registrate</a></p>
             </div>
           </div>
         </div>
@@ -131,18 +131,61 @@
 
       </div>
 
+      <!-- Siguiente fila -->
+
+      <div class="row">
+
+        <div class="col-lg-4 col-sm-6 col-md-4">
+          <div class="thumbnail ">
+            <img class="imgMain" src="assets/images/imagesMain/cienciasnaturales.jpg" alt="not found ">
+            <div class="caption"><br>
+              <h3>Ciencias Naturales 7°</h3>
+              <p>Santillana</p>
+              <p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 col-md-4">
+          <div class="thumbnail ">
+            <img class="imgMain" src="assets/images/imagesMain/constitucion.jpg" alt="not found ">
+            <div class="caption"><br>
+              <h3>Constitución Política de Colombia</h3>
+              <p>King Kolar</p>
+              <p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 col-md-4">
+          <div class="thumbnail ">
+            <img class="imgMain" src="assets/images/imagesMain/republica.png" alt="not found ">
+            <div class="caption"><br>
+              <h3>Republica de platon</h3>
+              <p>Manuel Fernando Galiano</p>
+              <p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
 
       <!-- START THE FEATURETTES -->
+<div class="">
+  <img class="Banner" src="assets/images/baner.jpg" alt="not found ">
+</div>
 
       <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Se acerca el dia del libro <span class="text-muted">23 de abril</span></h2>
+          <p class="lead">Es una conmemoración celebrada a nivel mundial con el objetivo de fomentar la lectura, la industria editorial y la protección de la propiedad intelectual por medio del derecho de autor. Desde 1995 es una celebración internacional promovida por la UNESCO, el 23 de abril de 1996 se inició en varios países y en 2008 la celebración ya había alcanzado más de cien</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto" src="assets/images/dialibro.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -150,27 +193,15 @@
 
       <div class="row featurette">
         <div class="col-md-7 push-md-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Feria del libro Bogotá. <span class="text-muted">La FILBo.</span></h2>
+          <p class="lead">La Feria Internacional del Libro de Bogotá nace en 1987 al identificar la necesidad de realizar una feria profesional que permitiera desarrollar una campaña masiva de promoción de lectura a través de una programación cultural de interés nacional e internacional, y de la exhibición organizada y de calidad de los fondos editoriales nacionales e internacionales. </p>
         </div>
         <div class="col-md-5 pull-md-7">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto" src="assets/images/feria.png" alt="Generic placeholder image">
         </div>
       </div>
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-
-        <div><h3>Poco a poco voy entendiendo :/ </h3></div>
-      </div>
+    </div>
 
       <hr class="featurette-divider">
 
