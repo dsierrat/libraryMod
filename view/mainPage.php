@@ -130,7 +130,7 @@
         </div>
 
       </div>
-
+        <br><br><br>
       <!-- Siguiente fila -->
 
       <div class="row">
@@ -173,9 +173,9 @@
 
 
       <!-- START THE FEATURETTES -->
-<div class="">
-  <img class="Banner" src="assets/images/baner.jpg" alt="not found ">
-</div>
+      <div class="">
+        <img class="Banner" src="assets/images/baner.jpg" alt="not found ">
+      </div>
 
       <hr class="featurette-divider">
 
