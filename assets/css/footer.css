@@ -1,0 +1,24 @@
+
+.ima{
+	 text-align: center;
+	 margin-top: 37px;
+}
+.col-md-6 {
+	left:110px;
+	color: black;
+
+}
+.col-md-3 {
+	color: black;
+}
+ul{
+	color: black!important;
+}
+a{
+	color: black!important;
+
+}
+a:hover{
+	color: #5cb85c!important;
+}
+
