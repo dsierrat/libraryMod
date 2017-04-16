@@ -12,7 +12,7 @@
     <input type="text" name="nombre" class="form-control" placeholder="Ingrese el nombre del libro" required>
   </div>
   <div class="form-group">
-    <label><b>Nombre</b></label>
+    <label><b>Editorial</b></label>
     <input type="text" name="editor" class="form-control" placeholder="Ingrese el nombre de la editorial" required>
   </div>
   <div class="form-group">
@@ -25,7 +25,7 @@
   <div class="form-group">
     <label><b>Clasificacion</b></label><br>
     <label class="custom-control custom-radio">
-      <input value="true" name="clasificacion" type="radio" class="custom-control-input">
+      <input value="true" name="clasificacion" type="radio" class="custom-control-input" checked="true">
       <span class="custom-control-indicator"></span>
       <span class="custom-control-description">Bachillerato</span>
     </label>
@@ -35,25 +35,25 @@
       <span class="custom-control-description">Universidad</span>
     </label>
       <br>
-      
-    <select  name="tipo" class="custom-select">
-      <option selected disabled>Seleccione una clasificacion</option>
+
+    <select  name="tipo" class="custom-select"  required>
+      <option value="" selected disabled>Seleccione una clasificacion</option>
       <option value="1">One</option>
       <option value="2">Two</option>
       <option value="3">Three</option>
     </select>
   </div>
   <div class="form-group">
-    <label><b>cantidad</b></label>
-    <input type="number" name="cantidad" class="form-control" placeholder="Ingrese la cantidad de libros" required>
+    <label><b>Cantidad</b></label>
+    <input type="number" min="1" max="100" name="cantidad" class="form-control" placeholder="Ingrese la cantidad de libros" required>
   </div>
   <div class="form-group">
     <label><b>Precio</b></label>
-    <input type="number" name="precio" class="form-control" placeholder="Ingrese el precio" required>
+    <input type="number" name="precio" min="5000" max="600000" class="form-control" placeholder="Ingrese el precio" required>
   </div>
   <div class="form-group">
     <label><b>Foto de portada</b></label>
-    <input type="file"  name="foto" class="form-control-file" aria-describedby="fileHelp">
+    <input type="file"  name="foto" class="form-control-file" aria-describedby="fileHelp" required>
     <small id="fileHelp" class="form-text text-muted">Ingrese la foto de portada del libro</small>
   </div>
   <div style="text-align:right">
@@ -62,3 +62,4 @@
 </form>
 </div>
 </div>
+<br><hr>

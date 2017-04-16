@@ -4,21 +4,26 @@
 	 margin-top: 37px;
 }
 .col-md-6 {
-	left:110px;
-	color: black;
+	left:250px;
+	display: block;
+}
+
+footer {
+	margin-top: 50px;
+	height: 0px;
+  position: static;
+  width: 99%;
 
 }
-.col-md-3 {
-	color: black;
+
+footer ul{
+	list-style: none;
+	color:black!important;
 }
-ul{
-	color: black!important;
-}
-a{
-	color: black!important;
+footer a{
+	color:black!important;
 
 }
 a:hover{
 	color: #5cb85c!important;
 }
-

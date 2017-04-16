@@ -18,6 +18,15 @@ class admin{
 
   }
 
+  public function home(){
+    // if(admin){
+    require_once 'view/header.html';
+    require_once 'view/admin/adminMenu.php';
+    require_once 'view/admin/admin.php';
+    require_once 'view/footer.html';
+
+  }
+
   public function registrar(){
     // if(admin){
     require_once 'view/header.html';

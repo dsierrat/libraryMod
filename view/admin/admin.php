@@ -1,30 +1,31 @@
 
-          <h1>Dashboard</h1>
+          <h1>Inicio administrador</h1>
+          <br>
 
           <section class="row text-center placeholders">
             <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <div class="text-muted">Something else</div>
+              <img src="assets/images/imagesMain/baldor.jpg" width="200px" height="200px" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Mas vendido</h4>
+              <div class="text-muted">algebra baldor</div>
             </div>
             <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
+              <img src="assets/images/imagesMain/ingles.jpg" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Mas vendido formato digital</h4>
               <span class="text-muted">Something else</span>
             </div>
             <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
+              <img src="assets/images/imagesMain/constitucion.jpg" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Mas vendido fisico</h4>
               <span class="text-muted">Something else</span>
             </div>
             <div class="col-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
+              <img src="assets/images/imagesMain/calculo.jpg" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+              <h4>Mas vendido en la semana</h4>
               <span class="text-muted">Something else</span>
             </div>
           </section>
 <br><br>
-          <h2>Libros mas vendidos</h2>
+          <h2>20 Libros mas vendidos</h2>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -135,3 +136,4 @@
         </main>
       </div>
     </div>
+    <hr>
