@@ -11,6 +11,26 @@ class adminModel {
       $this->pdo = Database::StartUp();
   }
 
+  public function esAdmin($user){
+
+    try
+    {
+      $query = $this->pdo
+      ->prepare("SELECT email, password, es_admin FROM usuario WHERE email= ? and password=?");
+
+      $query->execute(array($user->user,
+                            $user->pass));
+
+        return $query->fetch(PDO::FETCH_OBJ);
+
+    } catch (Exception $e){
+
+      die($e->getMessage());
+
+    }
+
+  }
+
   public function registro($data){
 
     try
@@ -32,7 +52,7 @@ class adminModel {
                       ));
 */
     } catch (Exception $e){
-    
+
       die($e->getMessage());
 
     }

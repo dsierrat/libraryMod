@@ -6,7 +6,7 @@
     <h2 class="form-signin-heading">Inicio de sesión</h2>
 
     <label for="inputEmail" class="sr-only">Email </label>
-    <input type="text" name="username" class="form-control"  placeholder="Nombre de usuario" required autofocus>
+    <input type="email" name="username" class="form-control"  placeholder="Email" required autofocus>
 
     <label for="inputPassword" class="sr-only">Contraseña</label>
     <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
