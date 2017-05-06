@@ -4,9 +4,11 @@ require_once 'model/admin_model.php';
 class admin{
 
   private $model;
+  public $flag;
 
   function __construct(){
     $this->model = new adminModel();
+    $this->flag =false;
   }
 
 
@@ -31,6 +33,9 @@ class admin{
     // if(admin){
     require_once 'view/header.html';
     require_once 'view/admin/adminMenu.php';
+    if($this->flag==true){
+      require_once'view/success.html';
+    }
     require_once 'view/admin/registro.php';
     require_once 'view/footer.html';
 
@@ -51,6 +56,8 @@ class admin{
   //  $dataAdmin->foto = $_POST['foto'];
 
     $this->model->registro($dataAdmin);
+    $this->flag=true;
+    $this->registrar();
 
   }
 }
