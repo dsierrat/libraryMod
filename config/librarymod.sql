@@ -1,21 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
---
--- Servidor: 127.0.0.1
--- Tiempo de generación: 14-04-2017 a las 05:07:37
--- Versión del servidor: 10.1.13-MariaDB
--- Versión de PHP: 5.6.20
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Base de datos: `librarymod`
 --
@@ -40,6 +22,13 @@ CREATE TABLE `libro` (
   `foto` varchar(35) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `libro`
+--
+
+INSERT INTO `libro` (`isbn`, `nombre`, `autor`, `editorial`, `estado`, `descripcion`, `cantidad`, `precio`, `esBachillerato`, `clasificacion_fk`, `foto`) VALUES
+('23234', 'LALA', 'DIANA', 'ECOMERCE', 1, 'JAJAJAJA', 2, 80000, 0, '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -62,11 +51,13 @@ CREATE TABLE `tarjeta` (
 CREATE TABLE `usuario` (
   `id` varchar(20) NOT NULL,
   `tipo_documento` varchar(20) NOT NULL,
-  `nombre` varchar(70) NOT NULL,
-  `passsword` varchar(100) NOT NULL,
+  `nombre` varchar(75) NOT NULL,
+  `password` varchar(755) NOT NULL,
   `email` varchar(30) NOT NULL,
   `direccion` varchar(50) NOT NULL,
-  `tarjeta_fk` int(11) NOT NULL
+  `telefono` int(10) NOT NULL,
+  `tarjeta_fk` int(11) NOT NULL,
+  `es_admin` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

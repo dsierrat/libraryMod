@@ -32,7 +32,7 @@
             <div class="carousel-caption d-none d-md-block text-right">
               <h1>Te gustaria ser parte de nosotros</h1>
               <p >Registrate y podrás comprar todos lo libros que quieras </p>
-              <p><a class="btn btn-lg btn-primary" href="?c=login&a=registrar" role="button">Registrate</a></p>
+              <p><a class="btn btn-lg btn-primary" href="?c=usuario&a=registrar" role="button">Registrate</a></p>
             </div>
           </div>
         </div>
@@ -207,4 +207,3 @@
 
       <!-- /END THE FEATURETTES -->
       <!-- START FOOTER -->
-       
