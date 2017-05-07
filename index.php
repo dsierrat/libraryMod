@@ -1,7 +1,7 @@
 
  <?php
 
- $controller = "login";
+ $controller = "sistema";
 
  // Todo esta lógica hara el papel de un FrontController
  if(!isset($_REQUEST['c'])){
