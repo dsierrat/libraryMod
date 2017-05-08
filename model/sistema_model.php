@@ -16,10 +16,10 @@ class sistemaModel {
     try
     {
       $query = $this->pdo
-      ->prepare("SELECT  FROM libro ORDER BY RAND() LIMIT 1");
+      ->prepare("SELECT nombre, autor,foto,precio FROM libro ORDER BY RAND() LIMIT 9");
 
       $query->execute();
-      return $query->fetch(PDO::FETCH_OBJ);
+      return $query->fetchAll(PDO::FETCH_OBJ);
 
     } catch (Exception $e){
 

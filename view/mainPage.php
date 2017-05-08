@@ -54,123 +54,25 @@
 
     <div class="container marketing">
 
+
       <div class="row">
-
+        <?php foreach($this->inicio() as $r): ?>
         <div class="col-lg-4 col-sm-6 col-md-4">
           <div class="thumbnail ">
-            <img class="imgMain" src="assets/images/imagesMain/pressman.jpg" alt="not found ">
+            <img class="imgMain" src="<?php echo 'assets/images/imagesMain/'. $r->foto; ?>" alt="not found ">
             <div class="caption"><br>
-              <h3>Ing. de Software</h3>
-              <p>Pressman</p>
-              <p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+              <h3><?php echo $r->nombre; ?></h3>
+              <h5><?php echo "$ ". $r->precio;?></h5>
+              <p><?php echo $r->autor; ?></p>
+              <p><a href="#" class="btn btn-primary" role="button">Poner en carrito</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
             </div>
           </div>
+          <br><br>
         </div>
 
-        <div class="col-lg-4 col-sm-6 col-md-4">
-          <div class="thumbnail ">
-            <img class="imgMain" src="assets/images/imagesMain/calculo.jpg" alt="not found ">
-            <div class="caption"><br>
-              <h3>Calculo diferencial</h3>
-              <p>Alberto Camacho</p>
-              <p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6 col-md-4">
-          <div class="thumbnail ">
-            <img class="imgMain" src="assets/images/imagesMain/investiguemos.jpg" alt="not found ">
-            <div class="caption"><br>
-              <h3>Investiguemos 9</h3>
-              <p>Ciencias Naturales 9°</p>
-              <p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-            </div>
-          </div>
-        </div>
-
+        <?php endforeach ?>
       </div>
         <br><br><br>
-
-      <!-- Siguiente fila -->
-
-      <div class="row">
-
-        <div class="col-lg-4 col-sm-6 col-md-4">
-          <div class="thumbnail ">
-            <img class="imgMain" src="assets/images/imagesMain/baldor.jpg" alt="not found ">
-            <div class="caption"><br>
-              <h3>Algebra de Baldor</h3>
-              <p>Aurelio Baldor</p>
-              <p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6 col-md-4">
-          <div class="thumbnail ">
-            <img class="imgMain" src="assets/images/imagesMain/ingles.jpg" alt="not found ">
-            <div class="caption"><br>
-              <h3>World English 2</h3>
-              <p>National Geographic - Heinle</p>
-              <p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6 col-md-4">
-          <div class="thumbnail ">
-            <img class="imgMain" src="assets/images/imagesMain/guerra.jpg" alt="not found ">
-            <div class="caption"><br>
-              <h3>La segunda guerra mundial</h3>
-              <p>Liddell Hart</p>
-              <p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-        <br><br><br>
-      <!-- Siguiente fila -->
-
-      <div class="row">
-
-        <div class="col-lg-4 col-sm-6 col-md-4">
-          <div class="thumbnail ">
-            <img class="imgMain" src="assets/images/imagesMain/cienciasnaturales.jpg" alt="not found ">
-            <div class="caption"><br>
-              <h3>Ciencias Naturales 7°</h3>
-              <p>Santillana</p>
-              <p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6 col-md-4">
-          <div class="thumbnail ">
-            <img class="imgMain" src="assets/images/imagesMain/constitucion.jpg" alt="not found ">
-            <div class="caption"><br>
-              <h3>Constitución Política de Colombia</h3>
-              <p>King Kolar</p>
-              <p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-6 col-md-4">
-          <div class="thumbnail ">
-            <img class="imgMain" src="assets/images/imagesMain/republica.png" alt="not found ">
-            <div class="caption"><br>
-              <h3>Republica de platon</h3>
-              <p>Manuel Fernando Galiano</p>
-              <p><a href="#" class="btn btn-primary" role="button">Comprar</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
 
       <!-- START THE FEATURETTES -->
       <div class="">
@@ -207,4 +109,3 @@
 
       <!-- /END THE FEATURETTES -->
       <!-- START FOOTER -->
-       
