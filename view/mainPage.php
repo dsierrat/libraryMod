@@ -59,12 +59,12 @@
         <?php foreach($this->inicio() as $r): ?>
         <div class="col-lg-4 col-sm-6 col-md-4">
           <div class="thumbnail ">
-            <img class="imgMain" src="<?php echo 'assets/images/imagesMain/'. $r->foto; ?>" alt="not found ">
+            <img class="imgMain img-thumbnai" src="<?php echo 'assets/images/imagesMain/'. $r->foto; ?>" alt="not found ">
             <div class="caption"><br>
               <h3><?php echo $r->nombre; ?></h3>
               <h5><?php echo "$ ". $r->precio;?></h5>
               <p><?php echo $r->autor; ?></p>
-              <p><a href="#" class="btn btn-primary" role="button">Poner en carrito</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+              <p><a href="?c=carrito&a=agregar&id=<?php echo $r->isbn; ?>" class="btn btn-primary"  role="button">Poner en carrito</a> <a href="#" class="btn btn-default" role="button">Detalles</a></p>
             </div>
           </div>
           <br><br>

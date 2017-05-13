@@ -1,6 +1,6 @@
 
 
-<br><br><br><br>
+<br><br>
 <div class="container">
 
   <form method="post" enctype="multipart/form-data" action="?c=usuario&a=guardar"class="form-signin">

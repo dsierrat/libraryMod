@@ -13,7 +13,7 @@ class usuario{
 
   public function index(){
 
-    require_once 'view/header.html';
+    require_once 'view/header.php';
     require_once 'view/login.php';
     require_once 'view/footer.html';
 
@@ -21,7 +21,7 @@ class usuario{
 
   public function home(){
     // if(admin){
-    require_once 'view/header.html';
+    require_once 'view/header.php';
     require_once 'view/Usuario/usuario.php';
     require_once 'view/footer.html';
 
@@ -29,7 +29,7 @@ class usuario{
 
   public function registrar(){
     // if(admin){
-    require_once 'view/header.html';
+    require_once 'view/header.php';
     require_once 'view/Usuario/usuario.php';
     require_once 'view/footer.html';
 

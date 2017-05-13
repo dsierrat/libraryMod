@@ -10,18 +10,9 @@ class login{
     $this->model = new adminModel();
   }
 
-
-  public function index(){
-
-    require_once 'view/header.html';
-    require_once 'view/mainPage.php';
-    require_once 'view/footer.html';
-
-  }
-
   public function home() {
 
-    require_once 'view/header.html';
+    require_once 'view/header.php';
     require_once 'view/login.php';
     require_once 'view/footer.html';
 
@@ -38,14 +29,14 @@ class login{
 
     if(!empty($admin) && $admin->es_admin==true){
 
-        require_once 'view/header.html';
+        require_once 'view/header.php';
         require_once 'view/admin/adminMenu.php';
         require_once 'view/admin/admin.php';
         require_once 'view/footer.html';
 
     }else if(!empty($admin) && $admin->es_admin==false){
 
-        $this->index();
+        header('Location: index.php');
     }else{
 
         $this->home();

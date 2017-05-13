@@ -13,7 +13,8 @@ class Sistema{
 
   public function index(){
 
-    require_once 'view/header.html';
+
+    require_once 'view/header.php';
     require_once 'view/mainPage.php';
     require_once 'view/footer.html';
 
@@ -22,7 +23,7 @@ class Sistema{
 
   public function inicio(){
 
-    $sistema = new sistemaModel();  
+    $sistema = new sistemaModel();
    return $sistema->mostrarlibros();
 
 

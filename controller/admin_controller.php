@@ -14,7 +14,7 @@ class admin{
 
   public function index(){
 
-    require_once 'view/header.html';
+    require_once 'view/header.php';
     require_once 'view/mainPage.php';
     require_once 'view/footer.html';
 
@@ -22,7 +22,7 @@ class admin{
 
   public function home(){
     // if(admin){
-    require_once 'view/header.html';
+    require_once 'view/header.php';
     require_once 'view/admin/adminMenu.php';
     require_once 'view/admin/admin.php';
     require_once 'view/footer.html';
@@ -31,7 +31,7 @@ class admin{
 
   public function registrar(){
     // if(admin){
-    require_once 'view/header.html';
+    require_once 'view/header.php';
     require_once 'view/admin/adminMenu.php';
     if($this->flag==true){
       require_once'view/success.html';
