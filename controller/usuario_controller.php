@@ -13,15 +13,20 @@ class usuario{
 
   public function index(){
 
+<<<<<<< HEAD
     require_once 'view/header.html';
     require_once 'view/login.php';//para que despues del registro ingrese a logearse
+=======
+    require_once 'view/header.php';
+    require_once 'view/login.php';
+>>>>>>> 879b59c7ba955715e47c6fdaceeb5a32267c1a3f
     require_once 'view/footer.html';
 
   }
 
   public function home(){
     // if(admin){
-    require_once 'view/header.html';
+    require_once 'view/header.php';
     require_once 'view/Usuario/usuario.php';
     require_once 'view/footer.html';
 
@@ -29,7 +34,7 @@ class usuario{
 
   public function registrar(){
     // if(admin){
-    require_once 'view/header.html';
+    require_once 'view/header.php';
     require_once 'view/Usuario/usuario.php';
     require_once 'view/footer.html';
 
