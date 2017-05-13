@@ -14,7 +14,7 @@ class usuario{
   public function index(){
 
     require_once 'view/header.html';
-    require_once 'view/login.php';
+    require_once 'view/login.php';//para que despues del registro ingrese a logearse
     require_once 'view/footer.html';
 
   }
