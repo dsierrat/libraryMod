@@ -23,8 +23,10 @@ class carrito{
   public function inicio(){
 
     $carrito = new carritoModel();
-    return $carrito->mostrarInfo();
 
+    if(isset( $_COOKIE['carrito'])){
+    return $carrito->mostrarInfo();
+  }
   }
 
   public function agregar(){

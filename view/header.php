@@ -62,7 +62,9 @@
 
             </form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <li class="nav-item ">
-              <a class="nav-link active" href="?c=carrito&a=index" >Carrito ( <?php  echo isset($_COOKIE['carrito']) ? count(explode(";", $_COOKIE['carrito'])) : 0 ; ?> )</a>
+              <a class="nav-link active" href="?c=carrito&a=index" <?php  echo !isset($_COOKIE['carrito']) ? 'hidden' : ' ' ; ?> >
+                Carrito ( <?php echo count(explode(";", $_COOKIE['carrito'])); ?> )
+              </a>
             </li>
             <li class="nav-item ">
               <a class="nav-link active" href="?c=login&a=home" >Iniciar sesion</a>
