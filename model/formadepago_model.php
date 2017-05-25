@@ -15,7 +15,7 @@ class formadepagoModel {
 
     try
     {
-    $sql = "INSERT INTO tarjeta( banco, tipo, numtarj, caducidad, codseg, ciudad, provincia)
+    $sql = "INSERT INTO tarjeta( banco, tipo, numtarj, caducidad, codseg, ciudad, departamento  )
             VALUES (?,?,?,?,?,?,?)";
 
     $this->pdo->prepare($sql)

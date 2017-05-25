@@ -1,38 +1,92 @@
 
 <br>
 <div class="container">
-<h2>Descripcion de la Venta:</h2>
+<h2>Descripcion de la Venta</h2>
    <div class="form-group">
-   <label><b>Referencia:  </b></label>
+   <label><b>Referencia  </b></label>
    </div>
    <div class="form-group">
-   <label><b>Valor:       </b></label>
+   <label><b>Valor:      </b></label>
   </div>
-   <br>
-    <form method="post" enctype="multipart/form-data" action="?c=formadepago&a=guardar"class="form-signin">
-    <h2>Pagar Con:</h2>
-     <div class="row">
-       <div class="col-lg-4 col-sm-6 col-md-4">
-         <div class="thumbnail ">
-      <h3>Tarjeta de Credito</h3>
-          <form action="">
-          <input type="radio" name="visa"><img src="../../assets/images/imagesForCom/visa.PNG" width="60" height="40"/><br>
-          <input type="radio" name="master"><img src="../../assets/images/imagesForCom/master.PNG"width="60" height="40" /><br>
-          </form>
-          <div class="caption"><br>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Pagar</button>
-        </div>
+
+<h2>Seleccione una forma de Pago </h2><br><br>
+ <div id="accordion" role="tablist" aria-multiselectable="true">
+ <div class="card">
+   <div class="card-header" role="tab" id="headingOne">
+     <h5 class="mb-0">
+       <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         Tarjeta de Credito
+       </a>
+     </h5>
+   </div>
+   <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="card-block">
+       <div class="form-group">
+      <form method="post" enctype="multipart/form-data" action="?c=formadepago&a=guardar"class="form-signin">
+      <label><b>Tipo de tarjeta</b></label>
+
+       <input type="radio" name="tipo" value="visa" checked="true"> <img src="assets/images/imagesForCom/visa.png" width="60" height="40">
+       <input type="radio" name="tipo" value="master"> <img src="assets/images/imagesForCom/master.png" width="60" height="40">
+
+       </div>
+       <div class="form-group">
+       <label><b>Banco</b></label>
+       <input type="text" name="banco" class="form-control"  placeholder="Banco" required autofocus>
+       </div>
+       <div class="form-group">
+       <label><b>Número de Tarjeta</b></label>
+       <input type="number" name="numerTarj" class="form-control"  placeholder="Número de Tarjeta" required autofocus>
+       </div>
+       <div class="form-group">
+       <label><b>Caducidad</b></label>
+       <input type="date" name="caducidad" class="form-control"  placeholder="Caducidad" required autofocus>
+       </div>
+       <div class="form-group">
+       <label><b>Código de seguridad</b></label>
+       <input type="password" name="codPost" class="form-control" placeholder="Código de seguridad" required>
+       </div>
+       <div class="form-group">
+       <label><b>Ciudad</b></label>
+       <input type="text" name="ciudad" class="form-control"  placeholder="Ciudad" required autofocus>
+       </div>
+       <div class="form-group">
+       <label><b>Provincia</b></label>
+       <input type="text" name="provincia" class="form-control"  placeholder="Provincia" required autofocus>
+       </div>
+       <input class="btn btn-success" type="submit" value="Confirmar pago">
+     </form>
       </div>
-      <div class="col-lg-4 col-sm-6 col-md-4">
-        <div class="thumbnail ">
-        <h3>Efectivo</h3>
-          <form action="">
-          <input type="radio" name="baloto"><img src="../../assets/images/imagesForCom/efecty.png"width="60" height="40"/><br>
-          <input type="radio" name="efecty" value=><img src="../../assets/images/imagesForCom/baloto.jpg"width="60" height="40"/><br>
-          <form>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Pagar</button>
+   </div>
+ </div>
+ <div class="card">
+   <div class="card-header" role="tab" id="headingTwo">
+     <h5 class="mb-0">
+       <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         Efectivo
+       </a>
+     </h5>
+   </div>
+   <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+     <div class="card-block">
+        <label><b>Confirmación de datos</b></label>
+        <div class="form-group">
+         <label><b>Nombre</b></label>
+        <label for="inputNombre" class="sr-only">Nombre </label>
+        <input type="text" name="nombre" class="form-control"  placeholder="Nombre" required autofocus>
         </div>
-      </div>
-    </div>
-    </form>
+       <div class="form-group">
+       <label><b>Direccion</b></label>
+       <label for="inputDireccion" class="sr-only">Dirección</label>
+       <input type="text" name="direccion" class="form-control"  placeholder="Dirección" required autofocus>
+       </div>
+       <div class="form-group">
+       <label><b>Telefono</b></label>
+       <input type="number" name="telefono" class="form-control"  placeholder="Telefono" required autofocus>
+       </div>
+       <a href="#" class="btn btn-success" role="button">Confirmar pago contra entrega</a>
+     </div>
+   </div>
+ </div>
 </div>
+</div>
+<br><br><br><br>
