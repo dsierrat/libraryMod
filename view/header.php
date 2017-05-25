@@ -55,9 +55,9 @@
           </li>
           <ul class="nav navbar-nav navbar-toggler-right">
 
-            <form class="form-inline mt-2 mt-md-0 ">
-              <input class="form-control mr-sm-2" type="text" placeholder="Escribe el título, el nombre del autor, ">
-            <form action="?c=search&a=buscar" method="post" autocomplete="off"  class="form-inline mt-2 mt-md-0 ">
+            <form action="?c=sistema&a=mostrar" method="post" autocomplete="off"  class="form-inline mt-2 mt-md-0 ">
+
+              <input class="form-control mr-sm-2" type="text" name="search" placeholder="Escribe el título, el nombre del autor, ">
              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
 
             </form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

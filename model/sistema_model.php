@@ -29,4 +29,22 @@ class sistemaModel {
 
   }
 
+  function busqueda($data){
+
+    try
+    {
+      $query = $this->pdo
+      ->prepare("SELECT isbn, nombre,editorial,descripcion, autor,foto,precio FROM libro WHERE nombre LIKE ?");
+      $query->execute(array('%'.$data->nombre.'%'));
+
+      return $query->fetchAll(PDO::FETCH_OBJ);
+
+    } catch (Exception $e){
+
+      die($e->getMessage());
+
+    }
+
+  }
+
 }

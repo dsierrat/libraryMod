@@ -39,7 +39,8 @@
 </table>
 
     <div class"row" style="text-align : right" >
-    <a href="?c=formadepago&a=home" class="btn btn-success" role="button">Confirmar Compra</a>
+
+      <input class="btn btn-success" type="submit" value="Confirmar Compra ">
     </div>
 
         <br><br><br>

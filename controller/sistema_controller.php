@@ -20,15 +20,31 @@ class Sistema{
 
   }
 
+  public function mostrar(){
+
+
+    require_once 'view/header.php';
+    require_once 'view/Usuario/busqueda.php';
+    require_once 'view/footer.html';
+
+  }
+
 
   public function inicio(){
 
     $sistema = new sistemaModel();
    return $sistema->mostrarlibros();
+  }
 
+  public function buscar(){
 
+    $sistema = new sistemaModel();
+
+      $sistema->nombre = $_POST['search'];
+      return  $sistema->busqueda($sistema);
 
   }
+
 }
 
 
