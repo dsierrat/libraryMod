@@ -31,7 +31,7 @@ class formadepago{
     $dataFormaPt->codseg = $_POST['codPost'];
     $dataFormaPt->ciudad = $_POST['ciudad'];
     $dataFormaPt->provincia = $_POST['provincia'];
-    $this->model->registro($dataFormaPt);
+    $this->model->guardaTarjeta($dataFormaPt);
       $this->index();
   }
   }

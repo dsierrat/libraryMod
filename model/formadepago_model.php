@@ -11,7 +11,7 @@ class formadepagoModel {
       $this->pdo = Database::StartUp();
   }
 
-  public function registro($data){
+  public function guardaTarjeta($data){
 
     try
     {

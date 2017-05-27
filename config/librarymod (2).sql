@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-05-2017 a las 05:17:50
+-- Tiempo de generación: 27-05-2017 a las 21:35:52
 -- Versión del servidor: 10.1.13-MariaDB
 -- Versión de PHP: 5.6.30
 
@@ -49,12 +49,17 @@ CREATE TABLE `libro` (
 
 INSERT INTO `libro` (`isbn`, `nombre`, `autor`, `editorial`, `estado`, `descripcion`, `cantidad`, `precio`, `esBachillerato`, `clasificacion_fk`, `foto`, `es_digital`) VALUES
 ('112-597-21-25', 'Algebra de baldor', 'Aurelio Baldor', 'Cultural', 1, 'Libro de algebra para bachillerato ', 5, 30000, 0, '', 'baldor.jpg', 0),
+('222-567-89-88', 'Historia Universal Contemporanea', 'Marialba Pastor', 'Santillana', 1, 'Libro para grado sexto sobre la historia universal', 25, 25000, 1, '', 'historiauniversal.jpg', 1),
+('254-232-54-89', 'La republica', 'Platon', 'universal', 1, 'Libro de literatura universal y filosofia de platon', 5, 18000, 1, '', 'republica.png', 1),
 ('526-258-21-12', 'World English 2', 'National Geographic', 'Heinle', 1, 'Libro producido por la National Geographic para el aprendizaje del idioma ingles en universidades e institutciones ', 27, 75000, 1, '', 'ingles.jpg', 1),
+('789-585-45-96', 'Historia, Prehistoria, Antiguedad y edad media', 'Cristina Barbero', 'Santillana', 1, 'Libro de historia para bachillerato', 12, 30000, 1, '', 'historia1santillana.jpg', 1),
+('852-233-21-28', 'Investiguemos 9', 'Norma', 'Voluntad', 1, 'Libro de ciencias naturales para grado 9ª', 8, 25000, 1, '', 'investiguemos.jpg', 1),
 ('853-625-21-28', 'Calculo diferencial', 'Alberto Camacho', 'DML', 1, 'Libro de calculo diferencial para grado once y universidades', 5, 25000, 0, '', 'calculo.jpg', 0),
 ('853-625-21-41', 'Constitucion de Colombia', 'Constituyente de 1991', 'King Kolar', 1, 'Describiendo libro de prueba', 2, 600000, 0, '', 'constitucion.jpg', 0),
 ('854-214-23-52', 'Ciencias Naturales 7°', 'Santillana', 'Santillana', 1, 'Ciencias naturales para grado 7°', 5, 56000, 1, '', 'cienciasnaturales.jpg', 1),
 ('896-21-00-17', 'Historia de la 2° Guerra mundial', 'Liddell Hart', 'Caralt', 1, 'Relato de la segunda guerra mundial escrito por la mas prestigiosa analista militar de nuestro tiempo', 26, 85000, 1, '', 'guerra.jpg', 1),
-('956-895-51-86', 'Ing. de Software', 'Roger S. Pressman', 'Mc Graw Hill', 1, 'null - - - - - - ', 5, 12500, 0, '', 'pressman.jpg', 0);
+('956-895-51-86', 'Ing. de Software', 'Roger S. Pressman', 'Mc Graw Hill', 1, 'null - - - - - - ', 5, 12500, 0, '', 'pressman.jpg', 0),
+('9788-44-15-36', 'Java 8', 'Rogers Cadenhead', 'Anaya Multimedia', 1, 'Libro guia del lenguaje de programacion Java 8', 10, 45000, 1, '', 'java8.jpg', 1);
 
 -- --------------------------------------------------------
 

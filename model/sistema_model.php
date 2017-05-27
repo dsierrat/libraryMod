@@ -34,8 +34,8 @@ class sistemaModel {
     try
     {
       $query = $this->pdo
-      ->prepare("SELECT isbn, nombre,editorial,descripcion, autor,foto,precio FROM libro WHERE nombre LIKE ?");
-      $query->execute(array('%'.$data->nombre.'%'));
+      ->prepare("SELECT isbn, nombre,editorial,descripcion, autor,foto,precio FROM libro WHERE nombre LIKE ? or autor LIKE ?");
+      $query->execute(array('%'.$data->nombre.'%','%'.$data->nombre.'%'));
 
       return $query->fetchAll(PDO::FETCH_OBJ);
 
