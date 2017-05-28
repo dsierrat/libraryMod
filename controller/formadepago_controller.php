@@ -32,7 +32,25 @@ class formadepago{
     $dataFormaPt->ciudad = $_POST['ciudad'];
     $dataFormaPt->provincia = $_POST['provincia'];
     $this->model->guardaTarjeta($dataFormaPt);
+    $this->model->guardaVentaxLib();
+    $this->model->guardaVentaxLib2();
       $this->index();
+  }
+  public function guardar1(){
+    $dataFormaPe = new formadepagoModel();
+    $dataFormaPe->nombre = $_POST['nombre'];
+    $dataFormaPe->direccion = $_POST['direccion'];
+    $dataFormaPe->telefono = $_POST['telefono'];
+    $this->model->guardaEfectivo($dataFormaPe);
+      $this->index();
+  }
+  public function Venta(){
+    $carrito = new carritoModel();
+    return $carrito->guardaVentaxLib();
+  }
+  public function Venta2(){
+    $carrito = new carritoModel();
+    return $carrito->guardaVentaxLib2();
   }
   }
 ?>

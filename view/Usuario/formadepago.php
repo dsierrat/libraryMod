@@ -24,10 +24,8 @@
        <div class="form-group">
       <form method="post" enctype="multipart/form-data" action="?c=formadepago&a=guardar"class="form-signin">
       <label><b>Tipo de tarjeta</b></label>
-
        <input type="radio" name="tipo" value="visa" checked="true"> <img src="assets/images/imagesForCom/visa.png" width="60" height="40">
        <input type="radio" name="tipo" value="master"> <img src="assets/images/imagesForCom/master.png" width="60" height="40">
-
        </div>
        <div class="form-group">
        <label><b>Banco</b></label>
@@ -53,6 +51,7 @@
        <label><b>Provincia</b></label>
        <input type="text" name="provincia" class="form-control"  placeholder="Provincia" required autofocus>
        </div>
+
        <input class="btn btn-success" type="submit" value="Confirmar pago">
      </form>
       </div>
@@ -68,22 +67,22 @@
    </div>
    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
      <div class="card-block">
+      <form method="post" enctype="multipart/form-data" action="?c=formadepago&a=guardar1"class="form-signin">
         <label><b>Confirmación de datos</b></label>
         <div class="form-group">
          <label><b>Nombre</b></label>
-        <label for="inputNombre" class="sr-only">Nombre </label>
         <input type="text" name="nombre" class="form-control"  placeholder="Nombre" required autofocus>
         </div>
-       <div class="form-group">
-       <label><b>Direccion</b></label>
-       <label for="inputDireccion" class="sr-only">Dirección</label>
-       <input type="text" name="direccion" class="form-control"  placeholder="Dirección" required autofocus>
-       </div>
-       <div class="form-group">
-       <label><b>Telefono</b></label>
-       <input type="number" name="telefono" class="form-control"  placeholder="Telefono" required autofocus>
-       </div>
-       <a href="#" class="btn btn-success" role="button">Confirmar pago contra entrega</a>
+        <div class="form-group">
+        <label><b>Dirección</b></label>
+        <input type="text" name="direccion" class="form-control"  placeholder="Dirección" required autofocus>
+        </div>
+        <div class="form-group">
+        <label><b>Telefono</b></label>
+        <input type="number" name="telefono" class="form-control"  placeholder="Telefono" required autofocus>
+        </div>
+        <input class="btn btn-success" type="submit" value="Confirmar pago">
+      </form>
      </div>
    </div>
  </div>
