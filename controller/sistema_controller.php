@@ -45,7 +45,24 @@ class Sistema{
 
   }
 
+
+
+  public function mostrarPdf(){
+
+    $fichero = 'assets/libreria/countries.txt';
+    // Abre el fichero para obtener el contenido existente
+    $actual = file_get_contents($fichero);
+    // Añade una nueva persona al fichero
+    $actual .= "John Smith\n";
+    // Escribe el contenido al fichero
+    file_put_contents($fichero, $actual);
+
+    $sistema = new sistemaModel();
+   return $sistema->mostrarpdf();
+
+
+
+  }
+
 }
-
-
 ?>
