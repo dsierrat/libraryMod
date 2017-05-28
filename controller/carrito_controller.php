@@ -55,5 +55,11 @@ class carrito{
     print_r($cookies);
     echo count(explode(";", $_COOKIE['carrito']));
   }
+  public function versum(){
+
+    $carrito = new carritoModel();
+    return $carrito->mostrarSum();
+  }
+
 
 }
