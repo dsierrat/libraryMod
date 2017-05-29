@@ -1,8 +1,2 @@
-222-567-89-88;Historia Universal Contemporanea;1;25000; 
-526-258-21-12;World English 2;1;75000; 
-789-585-45-96;Historia, Prehistoria, Antiguedad y edad media;1;30000; 
-852-233-21-28;Investiguemos 9;1;25000; 
-854-214-23-52;Ciencias Naturales 7°;1;56000; 
-896-21-00-17;Historia de la 2° Guerra mundial;1;85000; 
-956-895-51-86;Ing. de Software;1;12500; 
+112-597-21-25;Algebra de baldor;1;30000; 
 9788-44-15-36;Java 8;1;45000; 

@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.7.0
+-- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-05-2017 a las 06:39:24
--- Versión del servidor: 10.1.19-MariaDB
--- Versión de PHP: 5.6.24
+-- Tiempo de generación: 30-05-2017 a las 01:30:04
+-- Versión del servidor: 10.1.13-MariaDB
+-- Versión de PHP: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,28 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `librarymod`
 --
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `efectivo`
---
-
-CREATE TABLE `efectivo` (
-  `ID` int(11) NOT NULL,
-  `nombre` varchar(50) DEFAULT NULL,
-  `direccion` varchar(50) DEFAULT NULL,
-  `telefono` int(15) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `efectivo`
---
-
-INSERT INTO `efectivo` (`ID`, `nombre`, `direccion`, `telefono`) VALUES
-(1, 'Ana', 'reefrref', 3434345),
-(2, 'vdff', 'eefge', 1243434),
-(3, 'vdff', 'eefge', 1243434);
 
 -- --------------------------------------------------------
 
@@ -104,10 +84,8 @@ CREATE TABLE `tarjeta` (
 --
 
 INSERT INTO `tarjeta` (`id`, `banco`, `tipo`, `numtarj`, `caducidad`, `codseg`, `ciudad`, `departamento`, `usuario_fk`) VALUES
-(15, 'vtg', 'visa', 34545, '2017-04-23', 4545, 'Bogota', 'Cali', ''),
-(16, 'vtg', 'visa', 34545, '2017-04-23', 4545, 'Bogota', 'Cali', ''),
-(17, 'vtg', 'visa', 34545, '2017-04-23', 4545, 'Bogota', 'Cali', ''),
-(18, 'vtg', 'visa', 34545, '2017-04-23', 4545, 'Bogota', 'Cali', '');
+(1, 'Davivienda', 'visa', 142653215632, '2023-10-20', 266, 'Bogota', 'Cundinamarca', ''),
+(2, 'Bogota', 'visa', 14541245265895, '2019-05-18', 368, 'Cartagena', 'Bolivar', '');
 
 -- --------------------------------------------------------
 
@@ -146,8 +124,16 @@ CREATE TABLE `venta` (
   `usuario_fk` varchar(20) NOT NULL,
   `tarjeta_fk` int(11) NOT NULL,
   `total` double NOT NULL,
-  `fecha_crea` date NOT NULL
+  `fecha_crea` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `venta`
+--
+
+INSERT INTO `venta` (`id`, `usuario_fk`, `tarjeta_fk`, `total`, `fecha_crea`) VALUES
+(1, '', 1, 353500, '2017-05-29 18:25:45'),
+(2, '', 2, 75000, '2017-05-29 18:28:37');
 
 -- --------------------------------------------------------
 
@@ -159,7 +145,7 @@ CREATE TABLE `venta_x_libro` (
   `id` int(11) NOT NULL,
   `libro_fk` varchar(17) NOT NULL,
   `venta_fk` int(11) NOT NULL,
-  `fecha_crea` date NOT NULL
+  `fecha_crea` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -167,36 +153,20 @@ CREATE TABLE `venta_x_libro` (
 --
 
 INSERT INTO `venta_x_libro` (`id`, `libro_fk`, `venta_fk`, `fecha_crea`) VALUES
-(1, '526-258-21-12', 0, '0000-00-00'),
-(2, '852-233-21-28', 0, '0000-00-00'),
-(3, '853-625-21-41', 0, '0000-00-00'),
-(4, '896-21-00-17', 0, '0000-00-00'),
-(5, '956-895-51-86', 0, '0000-00-00'),
-(8, '526-258-21-12', 0, '0000-00-00'),
-(9, '852-233-21-28', 0, '0000-00-00'),
-(10, '853-625-21-41', 0, '0000-00-00'),
-(11, '896-21-00-17', 0, '0000-00-00'),
-(12, '956-895-51-86', 0, '0000-00-00'),
-(15, '526-258-21-12', 0, '0000-00-00'),
-(16, '852-233-21-28', 0, '0000-00-00'),
-(17, '853-625-21-41', 0, '0000-00-00'),
-(18, '896-21-00-17', 0, '0000-00-00'),
-(19, '956-895-51-86', 0, '0000-00-00'),
-(22, '526-258-21-12', 0, '0000-00-00'),
-(23, '852-233-21-28', 0, '0000-00-00'),
-(24, '853-625-21-41', 0, '0000-00-00'),
-(25, '896-21-00-17', 0, '0000-00-00'),
-(26, '956-895-51-86', 0, '0000-00-00');
+(1, '222-567-89-88', 1, '2017-05-29 18:25:45'),
+(2, '526-258-21-12', 1, '2017-05-29 18:25:45'),
+(3, '789-585-45-96', 1, '2017-05-29 18:25:45'),
+(4, '852-233-21-28', 1, '2017-05-29 18:25:45'),
+(5, '854-214-23-52', 1, '2017-05-29 18:25:45'),
+(6, '896-21-00-17', 1, '2017-05-29 18:25:45'),
+(7, '956-895-51-86', 1, '2017-05-29 18:25:45'),
+(8, '9788-44-15-36', 1, '2017-05-29 18:25:45'),
+(16, '112-597-21-25', 2, '2017-05-29 18:28:37'),
+(17, '9788-44-15-36', 2, '2017-05-29 18:28:37');
 
 --
 -- Índices para tablas volcadas
 --
-
---
--- Indices de la tabla `efectivo`
---
-ALTER TABLE `efectivo`
-  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indices de la tabla `libro`
@@ -233,25 +203,21 @@ ALTER TABLE `venta_x_libro`
 --
 
 --
--- AUTO_INCREMENT de la tabla `efectivo`
---
-ALTER TABLE `efectivo`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
---
 -- AUTO_INCREMENT de la tabla `tarjeta`
 --
 ALTER TABLE `tarjeta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `venta`
 --
 ALTER TABLE `venta`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `venta_x_libro`
 --
 ALTER TABLE `venta_x_libro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
