@@ -1,5 +1,6 @@
 <?php
 require('../assets/libreria/fpdf.php');
+
 class PDF extends FPDF{
   // Cabecera de página
   function Header(){
@@ -23,9 +24,9 @@ class PDF extends FPDF{
     return $data;
 }
 // Better table
-function ImprovedTable($header, $data){
+function ImprovedTable($header, $data,$total){
     // Column widths
-    $w = array(40, 65, 35, 40);
+    $w = array(35, 100, 17, 30);
     // Header
     for($i=0;$i<count($header);$i++){
         $this->Cell($w[$i],7,$header[$i],1,0,'C');
@@ -40,10 +41,13 @@ function ImprovedTable($header, $data){
         $this->Ln();
     }
     // Closing line
+
+
+
     $this->Cell($w[0],6,"",'LR');
     $this->Cell($w[1],6,"",'LR');
     $this->Cell($w[2],6,"TOTAL",'LR',0,'R');
-    $this->Cell($w[3],6,number_format(500000),'LR',0,'R');
+    $this->Cell($w[3],6,number_format($total),'LR',0,'R');
     $this->Ln();
     $this->Cell(array_sum($w),0,'','T');
 }
@@ -60,7 +64,7 @@ function ImprovedTable($header, $data){
 $pdf = new PDF();
 $pdf->AliasNbPages();
 // Column headings
-$header = array('ISBN', 'Referencia', 'Unidades', 'Precio');
+$header = array('ISBN', 'Nombre', 'Unidades', 'Precio');
 // Data loading
 $data = $pdf->LoadData('../assets/libreria/countries.txt');
 $pdf->SetFont('Times','',12);
@@ -73,8 +77,12 @@ $pdf->MultiCell(40,7,"Datos del cliente",0,'L');
 $pdf->MultiCell(180,7,"Cliente: Fulanito de tal",1,'L');
 $pdf->MultiCell(180,7,"Direccion: Calle falsa 123                                       Telefono:4960022",1,'L');
 $pdf->Ln(10);
-$pdf->ImprovedTable($header,$data);
+
+$total=$_GET['id'];
+
+$pdf->ImprovedTable($header,$data,$total);
 $pdf->Ln(10);
-$pdf->MultiCell(40,7,"",1,1);
 $pdf->Output();
+
+
 ?>

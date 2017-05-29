@@ -23,36 +23,36 @@
       <div class="card-block">
        <div class="form-group">
       <form method="post" enctype="multipart/form-data" action="?c=formadepago&a=guardar"class="form-signin">
-      <label><b>Tipo de tarjeta</b></label>
-       <input type="radio" name="tipo" value="visa" checked="true"> <img src="assets/images/imagesForCom/visa.png" width="60" height="40">
-       <input type="radio" name="tipo" value="master"> <img src="assets/images/imagesForCom/master.png" width="60" height="40">
-       </div>
-       <div class="form-group">
-       <label><b>Banco</b></label>
-       <input type="text" name="banco" class="form-control"  placeholder="Banco" required autofocus>
-       </div>
-       <div class="form-group">
-       <label><b>Número de Tarjeta</b></label>
-       <input type="number" name="numerTarj" class="form-control"  placeholder="Número de Tarjeta" required autofocus>
-       </div>
-       <div class="form-group">
-       <label><b>Caducidad</b></label>
-       <input type="date" name="caducidad" class="form-control"  placeholder="Caducidad" required autofocus>
-       </div>
-       <div class="form-group">
-       <label><b>Código de seguridad</b></label>
-       <input type="password" name="codPost" class="form-control" placeholder="Código de seguridad" required>
-       </div>
-       <div class="form-group">
-       <label><b>Ciudad</b></label>
-       <input type="text" name="ciudad" class="form-control"  placeholder="Ciudad" required autofocus>
-       </div>
-       <div class="form-group">
-       <label><b>Provincia</b></label>
-       <input type="text" name="provincia" class="form-control"  placeholder="Provincia" required autofocus>
-       </div>
+        <label><b>Tipo de tarjeta</b></label>
+         <input type="radio" name="tipo" value="visa" checked="true"> <img src="assets/images/imagesForCom/visa.png" width="60" height="40">
+         <input type="radio" name="tipo" value="master"> <img src="assets/images/imagesForCom/master.png" width="60" height="40">
+         </div>
+         <div class="form-group">
+         <label><b>Banco</b></label>
+         <input type="text" name="banco" class="form-control"  placeholder="Banco" required autofocus>
+         </div>
+         <div class="form-group">
+         <label><b>Número de Tarjeta</b></label>
+         <input type="number" name="numerTarj" class="form-control"  placeholder="Número de Tarjeta" required autofocus>
+         </div>
+         <div class="form-group">
+         <label><b>Caducidad</b></label>
+         <input type="date" name="caducidad" class="form-control"  placeholder="Caducidad" required autofocus>
+         </div>
+         <div class="form-group">
+         <label><b>Código de seguridad</b></label>
+         <input type="password" name="codPost" class="form-control" placeholder="Código de seguridad" required>
+         </div>
+         <div class="form-group">
+         <label><b>Ciudad</b></label>
+         <input type="text" name="ciudad" class="form-control"  placeholder="Ciudad" required autofocus>
+         </div>
+         <div class="form-group">
+         <label><b>Provincia</b></label>
+         <input type="text" name="provincia" class="form-control"  placeholder="Provincia" required autofocus>
+         </div>
 
-       <input class="btn btn-success" type="submit" value="Confirmar pago">
+         <input class="btn btn-success" type="submit" value="Confirmar pago">
      </form>
       </div>
    </div>

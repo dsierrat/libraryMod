@@ -22,6 +22,7 @@ class formadepago{
     require_once 'view/Usuario/formadepago.php';
     require_once 'view/footer.html';
   }
+  //para tarjeta
   public function guardar(){
     $dataFormaPt = new formadepagoModel();
     $dataFormaPt->banco = $_POST['banco'];
@@ -31,11 +32,16 @@ class formadepago{
     $dataFormaPt->codseg = $_POST['codPost'];
     $dataFormaPt->ciudad = $_POST['ciudad'];
     $dataFormaPt->provincia = $_POST['provincia'];
-    $this->model->guardaTarjeta($dataFormaPt);
-    $this->model->guardaVentaxLib();
-    $this->model->guardaVentaxLib2();
-      $this->index();
+
+    $id_tarj= $this->model->guardaTarjeta($dataFormaPt);
+    $id_venta=$this->model->guardaVenta($id_tarj);
+
+    //Como ya guardo los registros de ventas se borran las cookies del carrito
+    setcookie("carrito", "", time()-3600);
+    $this->model->mostrarPdf($id_venta);
+  //  $this->index();
   }
+  //para efectivo
   public function guardar1(){
     $dataFormaPe = new formadepagoModel();
     $dataFormaPe->nombre = $_POST['nombre'];
@@ -44,13 +50,5 @@ class formadepago{
     $this->model->guardaEfectivo($dataFormaPe);
       $this->index();
   }
-  public function Venta(){
-    $carrito = new carritoModel();
-    return $carrito->guardaVentaxLib();
-  }
-  public function Venta2(){
-    $carrito = new carritoModel();
-    return $carrito->guardaVentaxLib2();
-  }
-  }
+}
 ?>

@@ -1,15 +1,8 @@
-Austria;Vienna;83859;8075
-Belgium;Brussels;30518;10192
-Denmark;Copenhagen;43094;5295
-Finland;Helsinki;304529;5147
-France;Paris;543965;58728
-Germany;Berlin;357022;82057
-Greece;Athens;131625;10511
-Ireland;Dublin;70723;3694
-Italy;Roma;301316;57563
-Luxembourg;Luxembourg;2586;424
-Netherlands;Amsterdam;41526;15654
-Portugal;Lisbon;91906;9957
-Spain;Madrid;504790;39348
-Sweden;Stockholm;410934;8839
-United Kingdom;London;243820;58862
+222-567-89-88;Historia Universal Contemporanea;1;25000; 
+526-258-21-12;World English 2;1;75000; 
+789-585-45-96;Historia, Prehistoria, Antiguedad y edad media;1;30000; 
+852-233-21-28;Investiguemos 9;1;25000; 
+854-214-23-52;Ciencias Naturales 7°;1;56000; 
+896-21-00-17;Historia de la 2° Guerra mundial;1;85000; 
+956-895-51-86;Ing. de Software;1;12500; 
+9788-44-15-36;Java 8;1;45000; 

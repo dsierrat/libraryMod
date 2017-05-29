@@ -35,7 +35,7 @@
 <h3>
   <?php foreach($this->versum() as $r):
   echo 'Total  a pagar: '.$r->suma;
-endforeach
+  endforeach
     ?>
 </h3>
 </div>&nbsp;&nbsp;
