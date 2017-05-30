@@ -60,6 +60,26 @@ class adminModel {
 
   }
 
+  public function consultas(){
+
+    try
+    {
+      $query = $this->pdo
+      ->prepare("SELECT COUNT(vxl.libro_fk) as cant, lib.nombre,lib.autor,lib.precio,  (lib.precio * COUNT(vxl.libro_fk)) as total   FROM venta_x_libro vxl
+                  INNER JOIN libro lib on vxl.libro_fk=lib.isbn
+                  group by libro_fk order by cant DESC LIMIT 20");
+
+      $query->execute();
+      return  $query->fetchAll(PDO::FETCH_OBJ);
+
+    } catch (Exception $e){
+
+      die($e->getMessage());
+
+    }
+
+  }
+
 }
 
 

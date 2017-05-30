@@ -1,6 +1,7 @@
 <?php
 
 require_once 'model/admin_model.php';
+require_once 'controller/admin_controller.php';
 
 class login{
 
@@ -29,10 +30,8 @@ class login{
 
     if(!empty($admin) && $admin->es_admin==true){
 
-        require_once 'view/header.php';
-        require_once 'view/admin/adminMenu.php';
-        require_once 'view/admin/admin.php';
-        require_once 'view/footer.html';
+      $dataAdmin = new admin();
+      $dataAdmin->home();
 
     }else if(!empty($admin) && $admin->es_admin==false){
 

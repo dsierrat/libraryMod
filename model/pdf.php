@@ -82,7 +82,11 @@ $total=$_GET['id'];
 
 $pdf->ImprovedTable($header,$data,$total);
 $pdf->Ln(10);
-$pdf->Output();
+   $pdf->Output('I');
+   $pdf->Output('D','facturaLibraryMod.pdf');
+ $pdf->Output('F','../assets/facturas/venta_'.$_GET['idv'].'.pdf');
+
+
 
 
 ?>

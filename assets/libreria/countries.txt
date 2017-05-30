@@ -1,2 +1,1 @@
-112-597-21-25;Algebra de baldor;1;30000; 
-9788-44-15-36;Java 8;1;45000; 
+853-625-21-28;Calculo diferencial;1;25000; 

@@ -109,7 +109,7 @@ public function mostrarPdf($id_venta){
   // Escribe el contenido al fichero
   file_put_contents($fichero, $texto);
 
-  header('Location: model/pdf.php?id='.$total.'');
+  header('Location: model/pdf.php?id='.$total.'&idv='.$id_venta);
 
 }
 

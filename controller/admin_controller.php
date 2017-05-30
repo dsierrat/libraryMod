@@ -41,6 +41,13 @@ class admin{
 
   }
 
+  public function consultasPrincipal(){
+
+      return $this->model->consultas();
+
+
+  }
+
   public function guardar(){
 
     $dataAdmin = new adminModel();
